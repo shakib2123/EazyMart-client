@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
 import Image from "/logo-text.png";
-const Logo = () => {
-  return <img src={Image} alt="logo-text" className="w-fit object-cover" />;
+const Logo = ({ className }) => {
+  return (
+    <Link to="/">
+      <img src={Image} alt="logo-text" className={className} />
+    </Link>
+  );
 };
 
 export default Logo;

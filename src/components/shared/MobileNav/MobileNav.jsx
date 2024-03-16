@@ -1,9 +1,10 @@
 import { useState } from "react";
+
 import { RxCross2 } from "react-icons/rx";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { MdOutlineSearch } from "react-icons/md";
-import { Link } from "react-router-dom";
-import Image from "/logo-text.png";
+
+import Logo from "../Logo/Logo";
 const MobileNav = () => {
   const [isShow, setIsShow] = useState(false);
   const [isShowSearchBar, setIsShowSearchBar] = useState(false);
@@ -19,9 +20,7 @@ const MobileNav = () => {
         </button>
         {/* logo */}
         <div className="max-w-32">
-          <Link to="/">
-            <img src={Image} alt="logo-text" className="object-cover w-full" />
-          </Link>
+          <Logo className="object-cover w-full" />
         </div>
         {/* buttons & profile */}
         <div>
